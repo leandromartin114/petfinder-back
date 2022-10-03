@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "outDir": "dist"
+    },
+    "includes": ["./**/*.ts"],
+}
