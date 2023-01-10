@@ -17,5 +17,10 @@ export const Report = sequelize.define("report", {
 // 		placeDescription: DataTypes.STRING,
 // 		petId: DataTypes.INTEGER,
 // 	},
-// 	{ sequelize, modelName: "report" }
+// 	{
+// 		sequelize,
+// 		modelName: "report",
+// 		freezeTableName: true,
+// 		tableName: "reports",
+// 	}
 // );

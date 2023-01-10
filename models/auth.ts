@@ -15,5 +15,5 @@ export const Auth = sequelize.define("auth", {
 // 		password: DataTypes.STRING,
 // 		userId: DataTypes.INTEGER,
 // 	},
-// 	{ sequelize, modelName: "auth" }
+// 	{ sequelize, modelName: "auth", freezeTableName: true, tableName: "auths" }
 // );

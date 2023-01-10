@@ -13,5 +13,10 @@ export const User = sequelize.define("user", {
 // 		fullName: DataTypes.STRING,
 // 		email: DataTypes.STRING,
 // 	},
-// 	{ sequelize, modelName: "user" }
+// 	{
+// 		sequelize,
+// 		modelName: "user",
+// 		freezeTableName: true,
+// 		tableName: "users",
+// 	}
 // );

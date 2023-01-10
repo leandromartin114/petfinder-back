@@ -12,6 +12,7 @@ export const Pet = sequelize.define("pet", {
 	email: DataTypes.STRING,
 	userId: DataTypes.INTEGER,
 });
+
 // export class Pet extends Model {}
 
 // Pet.init(
@@ -26,5 +27,5 @@ export const Pet = sequelize.define("pet", {
 // 		email: DataTypes.STRING,
 // 		userId: DataTypes.INTEGER,
 // 	},
-// 	{ sequelize, modelName: "pet" }
+// 	{ sequelize, modelName: "pet", freezeTableName: true, tableName: "pets" }
 // );
