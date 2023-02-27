@@ -1,8 +1,10 @@
-import { Sequelize } from "sequelize";
-import "dotenv/config";
+import pg from 'pg'
+import { Sequelize } from 'sequelize'
+import 'dotenv/config'
 
 export const sequelize = new Sequelize({
-	dialect: "postgres",
+	dialect: 'postgres',
+	dialectModule: pg,
 	username: process.env.SEQUELIZE_CREDS_USERNAME,
 	password: process.env.SEQUELIZE_CREDS_PASSWORD,
 	database: process.env.SEQUELIZE_CREDS_DATABASE,
@@ -15,5 +17,5 @@ export const sequelize = new Sequelize({
 			rejectUnauthorized: false,
 		},
 	},
-});
-sequelize.authenticate();
+})
+sequelize.authenticate()
