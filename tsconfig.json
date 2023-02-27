@@ -1,11 +1,12 @@
 {
-    "compilerOptions": {
-        "baseUrl": "./",
-        "target": "ESNext",
-        "module": "CommonJS",
-        "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "outDir": "dist"
-    },
-    "includes": ["./**/*.ts"],
+	"compilerOptions": {
+		"baseUrl": "./",
+		"target": "ESNext",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"outDir": "dist"
+	},
+	"includes": ["./**/*.ts"]
 }
